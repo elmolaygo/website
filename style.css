@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", "Noto Color Emoji", sans-serif;
+}
+
+body {
+    background: #001a25;
+}
+
+#toggle {
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #03a9f4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 150%;
+    color: #fff;
+}
+
+#toggle i {
+    transition: 300ms;
+}
+
+#toggle.active i {
+    transform: rotate(180deg);
+}
+
+#sidebar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 500ms;
+    background: #00aaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar.active {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    transition: 500ms;
+}
+
+#sidebar ul {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+#sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    transition: 300ms;
+    font-weight: bolder;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+#sidebar ul li:hover .link {
+    color: #fff;
+}
+
+#toggle {
+    transition: 300ms;
+}
+
+#toggle:hover {
+    background: #0f0f0f;
+}
+
+#toggle.active:hover {
+    background: #0af;
+}
+
+#toggle.active {
+    background: #0f0f0f;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background: #f9ca24;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.logo {
+    z-index: 1000;
+    font-size: 2em;
+    color: #000;
+    background: #00aaff;
+    width: 100%;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content p.title {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.main-content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    font-weight: 100;
+    font-family: sans-serif;
+}
