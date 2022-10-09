@@ -42,10 +42,21 @@
 }
 
 .xbox {
-    background-image: url("https://www.pngitem.com/pimgs/m/234-2346640_xbox-logo-white-xbox-logo-transparent-hd-png.png") center no-repeat;
     object-fit: cover;
     border: 5px solid #107C10;
-    background-color: #000;
+    background-color: 107C10;
+}
+
+.xbox::before {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #fff;
+    content: "XBOX";
+    height: 400px;
+    width: 400px;
 }
 
 .osu {
