@@ -42,7 +42,6 @@
 }
 
 .xbox {
-    object-fit: cover;
     border: 5px solid #107C10;
     background-color: 107C10;
 }
@@ -60,13 +59,35 @@
 }
 
 .osu {
-    background: url("https://steamuserimages-a.akamaihd.net/ugc/956340884540581395/E40CA064496C60F46A5F94CB2F0CCBDEEDA48258/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true") center;
     border: 5px solid #DC98A4;
 }
 
+.osu::before {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #fff;
+    content: "osu!";
+    height: 400px;
+    width: 400px;
+}
+
 .roblox {
-    background: url("https://i.pinimg.com/736x/bf/3d/0e/bf3d0e80eca0f6c29bddeec22a9923fc.jpg") center no-repeat;
     border: 5px solid #ff0000;
+}
+
+.roblox::before {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #fff;
+    content: "Roblox";
+    height: 400px;
+    width: 400px;
 }
 
 .game-profs {
@@ -81,4 +102,8 @@
     .game-profs {
         flex-direction: column;
     }
+}
+
+* {
+    text-decoration: none;
 }

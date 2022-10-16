@@ -1,0 +1,149 @@
+/* Social Media */
+
+.accounts {
+    flex-direction: column;
+    background: #0f0f0f;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.column {
+    margin: 10px 0;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-container {
+    position: relative;
+    margin: 0 20px;
+    height: 250px;
+    background: #fff;
+    width: 350px;
+    border-radius: 50px;
+    padding: 20px;
+    transition: 300ms;
+}
+
+.logoma {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.logoma.fb {
+    color: #3b5998;
+}
+
+.logoma.yt {
+    color: #ff0000;
+}
+
+.logoma.twt {
+    color: #1DA1F2;
+}
+
+.logoma.discord {
+    color: #5865f2;
+}
+
+.logoma.tt {
+    text-shadow: 2px 2px 0 #ff0050, -2px -2px 0 #00f2ea;
+}
+
+.logoma.web-old {
+    color: #00aaff;
+}
+
+.text {
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 10px;
+    width: 50%;
+    border-radius: 50px;
+    border: 3px solid #0f0f0f;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 300ms;
+    font-weight: bold;
+}
+
+.button:hover .logoma.fb i {
+    font-size: 50px;
+}
+
+.button.fb {
+    background: #3b5998;
+}
+
+.button.yt {
+    background: #ff0000;
+}
+
+.button.twt {
+    background: #1DA1F2;
+}
+
+.button.discord {
+    background: #5865f2;
+}
+
+.button.tt {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.button.web-old {
+    background: #00aaff;
+}
+
+.button:hover {
+    color: #fff;
+    background: #0f0f0f !important;
+    text-shadow: 2px 2px 0 #ff0050, -2px -2px 0 #00f2ea;
+}
+
+@media only screen and (max-width: 1215px) {
+    .accounts {
+        width: 430px !important;        
+    }
+
+    .column {
+        margin: 0;
+    }
+
+    .col-1 {
+        flex-direction: column;
+    }
+
+    .col-2 {
+        flex-direction: column;
+    }
+
+    .account-container {
+        margin: 20px 0;
+    }
+}
