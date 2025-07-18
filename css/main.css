@@ -1,0 +1,166 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+    --rich-black: #001021ff;
+    --midnight-green: #034748ff;
+    --blue-ncs: #1481baff;
+    --aero: #11b5e4ff;
+    --process-cyan: #0caadcff;
+    --alphi-blue: #00aaffff;
+}
+
+body {
+    background: var(--rich-black);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background: var(--blue-ncs);
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: fit-content;
+    border-radius: 30px;
+    background: var(--alphi-blue);
+    color: var(--rich-black);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links a {
+    color: var(--process-cyan);
+    text-decoration: none;
+    font-family: 'Rubik', cursive;
+    font-size: 1.35rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 2px var(--rich-black);
+}
+
+.links a:hover {
+    color: var(--aero);
+}
+
+.main-frame {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+/* Content */
+
+.page-title {
+    color: var(--aero);
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Navigation for Mobile */
+
+.show-nav {
+    display: none;
+    z-index: 1000;
+}
+
+.alt-nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -20;
+    background: var(--blue-ncs);
+    transition: 300ms ease-in-out;
+}
+
+.alt-nav.active {
+    right: 0;
+    z-index: 999;
+}
+
+.alt-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alt-nav ul a {
+    color: var(--rich-black);
+    text-decoration: none;
+    font-family: 'Rubik', cursive;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.alt-nav ul a:hover {
+    color: var(--aero);
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo {
+        scale: .9;
+        z-index: 1000;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .show-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        transition: 300ms;
+        background: var(--alphi-blue);
+        border-radius: 15px;
+    }
+    .show-nav i {
+        color: var(--rich-black);
+        font-size: 1.2rem;
+    }
+}
