@@ -1,0 +1,9 @@
+.content p {
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.content p a {
+    color: var(--blue-ncs);
+    text-decoration: none;
+}
