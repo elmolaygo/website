@@ -1,7 +1,7 @@
 const lastfmUsername = "alphilaygo"
 
 async function getTrackDetails() {
-    const apiUrl = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastfmUsername}&api_key=ed1cd5e371ecb2d3e96319e7340a91ce&format=json`;
+    const apiUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${lastfmUsername}&api_key=ed1cd5e371ecb2d3e96319e7340a91ce&format=json`;
 
     try {
         const response = await fetch(apiUrl);
@@ -86,7 +86,7 @@ async function getTrackDetails() {
 async function getUserDetails() {
     await getTrackDetails()
 
-    const apiUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=alphilaygo&api_key=ed1cd5e371ecb2d3e96319e7340a91ce&format=json"
+    const apiUrl = "https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=alphilaygo&api_key=ed1cd5e371ecb2d3e96319e7340a91ce&format=json"
 
     try {
         const response = await fetch(apiUrl)
