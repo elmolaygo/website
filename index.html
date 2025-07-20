@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/widget.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/4b8c3f675e.js" crossorigin="anonymous"></script>
     <title>elmolaygo</title>
 </head>
@@ -26,8 +28,25 @@
     </div>
     <div class="main-frame">
         <div class="page-title">Home</div>
-        <div class="content"></div>
+        <div class="content">
+            <p>Welcome to my tiny site! Feel free to explore!</p>
+            <p>Check out the source code here: <a target="_blank" rel="noreferrer" href="https://github.com/elmolaygo/website">GitHub</a></p>
+            <div class="lastfm-widget">
+                <img id="albumArt" class="album-art" src="https://community.mp3tag.de/uploads/default/original/2X/a/acf3edeb055e7b77114f9e393d1edeeda37e50c9.png" alt="albumArt">
+                <div class="scrobble-status"><i id="scrobbleStatus" class="fa-solid fa-clock-rotate-left"></i></div>
+                <div class="details-wrapper">
+                    <p id="songTitle" class="details song-title">Getting title...</p>
+                    <p id="songArtist" class="details album-name">Getting artist...</p>
+                    <p id="profileName" class="details profile-name">profileName - scrobbleCount</p>
+                </div>
+            </div>
+            <div class="widget-details">
+                <p><i class="fa-solid fa-clock-rotate-left"></i> - Last track I played</p>
+                <p><i class="fa-solid fa-headphones-simple"></i> - Currently listening</p>
+            </div>
+        </div>
     </div>
     <script src="js/navbar.js"></script>
+    <script src="js/widget.js"></script>
 </body>
 </html>

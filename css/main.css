@@ -35,6 +35,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px 0;
+    z-index: 51;
 }
 
 .logo {
@@ -58,13 +59,12 @@ body {
 }
 
 .links a {
-    color: var(--process-cyan);
+    color: var(--rich-black);
     text-decoration: none;
     font-family: 'Rubik', cursive;
     font-size: 1.35rem;
     font-weight: 500;
     transition: color 0.3s ease;
-    text-shadow: 0 0 2px var(--rich-black);
 }
 
 .links a:hover {
@@ -85,6 +85,19 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     font-weight: 600;
+}
+
+.content {
+    color: var(--process-cyan);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* Navigation for Mobile */
@@ -162,5 +175,14 @@ body {
     .show-nav i {
         color: var(--rich-black);
         font-size: 1.2rem;
+    }
+    .lastfm-widget {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .lastfm-widget {
+        scale: 0.7;
     }
 }
