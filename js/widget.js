@@ -30,7 +30,7 @@ async function getTrackDetails() {
     const trackNameLength = trackName.length;
     const artistNameLength = trackArtist.length;
 
-    // Make paragraph a marquee if either artist or title is longer than 18 characters so it doesn't word wrap
+    // Turn a <p> into a <marquee> if either artist or title is longer than 18 characters so it doesn't word wrap
 
     if (trackNameLength >= 18) {
       songTitle.outerHTML = `<marquee id="longerSongTitle" class="details song-title"></marquee>`;
