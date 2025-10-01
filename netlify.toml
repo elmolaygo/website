@@ -1,5 +1,5 @@
 [build]
-    public = "#"
+    public = "."
     functions = "netlify/functions"
 
 [[redirects]]
