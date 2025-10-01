@@ -1,0 +1,12 @@
+# Local Netlify folder
+.netlify/
+
+# npm modules
+node_modules/
+
+# local environment variable for testing
+.env
+
+# Build outputs
+dist/
+.cache/
